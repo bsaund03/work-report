@@ -1,6 +1,81 @@
-[class*="col"] {
+.col {
     padding: 1rem;
     background-color: blue;
     border: 2px solid red;
     color: white;
+}
+
+.page {
+    border: 2px solid purple;
+}
+
+ul li {
+    display:inline-block;
+    background-color:#eee;
+    list-style-type:none;
+    margin-right:-4px;
+    padding:10px;
+    border-right:1px solid white;
+}
+
+html {
+  min-height: 100%;
+}
+
+body {
+  min-height: 100%;
+  background-color: #282b36;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr, 1fr, 5fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px; 
+    border: 2px solid blue;
+}
+
+p {
+    color: white;
+}
+
+.grid-item {
+    background-color: gray;
+}
+
+.container {
+    display: flex;
+}
+
+.column {
+    flex-direction: column;
+}
+.row {
+    flex-direction: row;
+}
+
+.border {
+    border: 3px solid red;
+}
+
+#main {
+    align-self: flex-start;
+    width: 70%;
+    /* justify-content: flex-start; */
+}
+#title {
+    align-self: center;
+    width: 100%;
+    /* justify-content: center; */
+}
+#carousel {
+    align-self: center;
+    width: 100%;
+    /* justify-content: center; */
+}
+#nav {
+    align-self: stretch;
+    width: 30%;
+    /* justify-content: flex-end; */
 }
